@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman';
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    z-index: 100;
+    padding: 20px 10px;
+    background-color:lightsteelblue;
+}
+
+.navilink {
+    list-style: none;
+    display: flex;
+}
+
+.navilink a {
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.navilink li {
+    padding: 0px 40px;
+}
+
+.navilink li a:hover {
+    color:#000000;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+.default {
+    height: 100vh;
+    width: 100%;
+    padding: 15vw;
+    background-image: url('pictures/DefaultBG.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.defaulttitle {
+    text-align: center;
+    font-size: 3rem;
+    width: 70vw;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.about {
+    background-image: url('pictures/SkyBG.jpg');
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 9rem;
+}
+
+.abouttext {
+    color: white;
+    width: 75%;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 15px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.abouttitle {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.aboutphoto {
+    width: 23%;
+}
+
+.aboutprojectpic {
+    width: 50%;
+    text-align: left;
+}
+
+table,
+td,
+th {
+    border: 1px solid antiquewhite;
+    background-color: black;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.education {
+    width: 50vw;
+    color:white;
+}
+
+.skill {
+    color: #EEEBDD;
+}
+
+.skilllist {
+    color: white;
+    text-align: left;
+}
+
+.portfolio {
+    background-image: url('pictures/DefaultBG.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 5rem;
+}
+
+.portfoliotitle {
+    text-align: left;
+    font-size: x-large;
+}
+
+.contact {
+    background-image: url('pictures/SkyBG.jpg');
+    width: 100vw;
+    padding: 2vw;
+}
+
+form {
+    color: white;
+    width: 100%;
+    padding: 2vw;
+}
+
+input[type=submit] {
+    margin-top: 1rem;
+    background-color:lightsteelblue;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 600;
+}
+
+input[type=submit]:hover {
+    background-color:red;
+}
+
+input[type=text] {
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px 20px;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+input[type=email] {
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px 20px;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    font-weight: 600;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
